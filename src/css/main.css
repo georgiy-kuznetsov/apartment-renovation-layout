@@ -1,0 +1,93 @@
+@font-face {
+  font-family: msc300;
+  src: url(../fonts/ofont.ru_MuseoSansCyrl300.ttf);
+}
+
+@font-face {
+  font-family: msc500;
+  src: url(../fonts/ofont.ru_MuseoSansCyrl500.ttf);
+}
+
+@font-face {
+  font-family: msc700;
+  src: url(../fonts/ofont.ru_MuseoSansCyrl700.ttf);
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1140px;
+  width: 94%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button {
+  background-color: #FFD200;
+  padding: 18px 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-family: msc700, sans-serif;
+  border: none;
+}
+
+.navbar {
+  padding: 8px 0;
+  font-family: msc300, sans-serif;
+  color: #333333;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__logo {
+  height: 75px;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+.navbar__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar__button {
+  margin-left: 30px;
+  font-size: 13px;
+}
+
+.navbar__phone {
+  text-decoration: none;
+  color: #333333;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.navbar__adress {
+  font-size: 13px;
+}
+/*# sourceMappingURL=main.css.map */

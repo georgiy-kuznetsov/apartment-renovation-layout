@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,UAAU;EACN,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,2CAA2C;;;AAEpD,UAAU;EACN,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,2CAA2C;;;AAEpD,UAAU;EACN,WAAW,EAAE,MAAM;EACnB,GAAG,EAAE,2CAA2C",
+    "sources": [
+        "../sass/fonts-color.sass"
+    ],
+    "names": [],
+    "file": "fonts-color.css"
+}

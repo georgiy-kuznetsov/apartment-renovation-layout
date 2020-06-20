@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_4" data-name="Group 4" transform="translate(-1399 -1432)">
+    <g id="Эллипс_1" data-name="Эллипс 1" transform="translate(1399 1432)" fill="none" stroke="#ffd200" stroke-width="2">
+      <circle cx="20" cy="20" r="20" stroke="none"/>
+      <circle cx="20" cy="20" r="19" fill="none"/>
+    </g>
+    <g id="clock-circular-outline_3_" data-name="clock-circular-outline (3)">
+      <g id="clock-circular-outline_3_2" data-name="clock-circular-outline (3)" transform="translate(1409 1442)">
+        <path id="Forma_1" data-name="Forma 1" d="M0,10A10,10,0,1,1,10,20,10.012,10.012,0,0,1,0,10Zm2.128,0A7.873,7.873,0,1,0,10,2.128,7.881,7.881,0,0,0,2.127,10Zm7.767,1.338a.823.823,0,0,1-.824-.823V4.288a.823.823,0,0,1,1.647,0v5.4h4.494a.823.823,0,1,1,0,1.647Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
