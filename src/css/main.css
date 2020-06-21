@@ -91,6 +91,11 @@ img {
   font-size: 13px;
 }
 
+.hero {
+  background-color: #F5F5F5;
+  color: #333333;
+}
+
 .hero-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -107,9 +112,22 @@ img {
           justify-content: space-between;
 }
 
-.hero-list__img {
-  height: 40px;
-  width: 40px;
+.hero-text {
+  width: 50%;
+  padding-right: 130px;
+}
+
+.hero-text__title {
+  font-size: 40px;
+  margin-bottom: 50px;
+  font-family: msc700;
+}
+
+.hero-text__subtitle {
+  font-family: msc700;
+  font-size: 20px;
+  display: block;
+  margin-bottom: 65px;
 }
 
 .hero-image {
@@ -119,10 +137,32 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 50px 0;
+  padding: 50px 0 50px 15px;
 }
 
-.hero-image img {
-  width: 100%;
+.hero-list__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+  width: 65%;
+}
+
+.hero-list__img {
+  margin-right: 30px;
+  height: 40px;
+  width: 40px;
+}
+
+.hero-list__text {
+  font-family: msc300;
+  font-size: 14px;
 }
 /*# sourceMappingURL=main.css.map */
