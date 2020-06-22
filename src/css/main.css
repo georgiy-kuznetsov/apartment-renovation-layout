@@ -18,7 +18,7 @@ img {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1170px;
   width: 94%;
   margin-right: auto;
   margin-left: auto;
@@ -111,14 +111,19 @@ img {
 
 .hero-text {
   width: 50%;
-  padding-right: 130px;
+  padding-right: 100px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .hero-text__title {
   font-size: 40px;
-  margin-bottom: 35px;
+  margin-bottom: 40px;
   margin-top: 80px;
   line-height: 1.4;
+  letter-spacing: .6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: msc700;
 }
 
@@ -126,7 +131,7 @@ img {
   font-family: msc700;
   font-size: 20px;
   display: block;
-  margin-bottom: 65px;
+  margin-bottom: 70px;
 }
 
 .hero-image {
@@ -136,7 +141,15 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 50px 0 50px 15px;
+  padding: 50px 0 50px 30px;
+  border: 1px solid green;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.hero-image img {
+  width: 100%;
+  border: 1px solid red;
 }
 
 .hero-list__items {
@@ -150,8 +163,9 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 30px;
-  width: 65%;
+  margin-bottom: 23px;
+  width: 70%;
+  min-height: 40px;
 }
 
 .hero-list__img {
@@ -163,5 +177,6 @@ img {
 .hero-list__text {
   font-family: msc300;
   font-size: 14px;
+  line-height: 1.8;
 }
 /*# sourceMappingURL=main.css.map */
