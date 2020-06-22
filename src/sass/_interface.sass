@@ -7,6 +7,15 @@ img
     margin-right: auto
     margin-left: auto
 
+.section-title
+    line-height: 1.4
+    letter-spacing: .6px
+    +msc700
+
+.section-subtitle
+    +msc500
+
+
 .button
     background-color: $yell
     padding: 18px 30px
@@ -14,3 +23,12 @@ img
     border-radius: 10px
     font-family: msc700, sans-serif
     border: none
+    transition: 0.4s
+    &:hover
+        background-color: lighten($yell, 10%)
+        cursor: pointer
+
+.phone
+        text-decoration: none
+        color: $text_dark
+        +msc700

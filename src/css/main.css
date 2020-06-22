@@ -24,6 +24,16 @@ img {
   margin-left: auto;
 }
 
+.section-title {
+  line-height: 1.4;
+  letter-spacing: .6px;
+  font-family: msc700, sans-serif;
+}
+
+.section-subtitle {
+  font-family: msc500, sans-serif;
+}
+
 .button {
   background-color: #FFD200;
   padding: 18px 30px;
@@ -31,6 +41,19 @@ img {
   border-radius: 10px;
   font-family: msc700, sans-serif;
   border: none;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
+}
+
+.phone {
+  text-decoration: none;
+  color: #333333;
+  font-family: msc700, sans-serif;
 }
 
 .navbar {
@@ -82,11 +105,8 @@ img {
 }
 
 .navbar__phone {
-  text-decoration: none;
-  color: #333333;
   font-size: 20px;
   margin-top: 10px;
-  font-family: msc700, sans-serif;
 }
 
 .navbar__adress {
@@ -118,19 +138,15 @@ img {
           box-sizing: border-box;
 }
 
-.hero-text__title {
+.hero__title {
   font-size: 40px;
   margin-bottom: 40px;
   margin-top: 80px;
-  line-height: 1.4;
-  letter-spacing: .6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: msc700, sans-serif;
 }
 
-.hero-text__subtitle {
-  font-family: msc700, sans-serif;
+.hero__subtitle {
   font-size: 20px;
   display: block;
   margin-bottom: 70px;
