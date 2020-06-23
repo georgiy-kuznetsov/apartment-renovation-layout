@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/* Шрифты */
 @font-face {
   font-family: msc300;
   src: url(../fonts/ofont.ru_MuseoSansCyrl300.ttf);
@@ -13,6 +15,13 @@
   src: url(../fonts/ofont.ru_MuseoSansCyrl700.ttf);
 }
 
+/* Цвета */
+/* Настройки глобальных блоков */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 img {
   width: 100%;
 }
@@ -24,14 +33,18 @@ img {
   margin-left: auto;
 }
 
+.section {
+  padding: 90px 0;
+}
+
 .section-title {
-  line-height: 1.4;
-  letter-spacing: .6px;
+  font-size: 24px;
   font-family: msc700, sans-serif;
 }
 
 .section-subtitle {
-  font-family: msc500, sans-serif;
+  font-size: 16px;
+  font-family: msc300, sans-serif;
 }
 
 .button {
@@ -56,6 +69,19 @@ img {
   font-family: msc700, sans-serif;
 }
 
+.input {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  height: 65px;
+  padding: 20px 0 20px 26px;
+  font-size: 15px;
+}
+
+.input:focus {
+  border: 1px solid #FFD200;
+}
+
+/* Стили верхней навигационной панели */
 .navbar {
   padding: 8px 0;
   font-family: msc300, sans-serif;
@@ -113,6 +139,7 @@ img {
   font-size: 13px;
 }
 
+/* Стили главного блока (hero) */
 .hero {
   background-color: #F5F5F5;
   color: #333333;
@@ -185,6 +212,58 @@ img {
   line-height: 1.8;
 }
 
+/* Стили блока с предложением и формой ОС (offer) */
+.offer {
+  background: url("../img/offer/Clip.jpg") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer::before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 370px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+
+/* Стили для карусели (slider) */
+/* Адаптив под разные размеры экрана */
 @media all and (min-width: 990px) and (max-width: 1239px) {
   .container {
     max-width: 1000px;
@@ -206,6 +285,10 @@ img {
   }
   .hero-image {
     padding-left: 20px;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 
@@ -248,11 +331,37 @@ img {
     width: auto;
     padding: 30px 0 80px 0;
   }
+  .offer {
+    background: none;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__title {
+    max-width: 80%;
+  }
+  .offer__subtitle {
+    max-width: 80%;
+  }
 }
 
 @media all and (min-width: 320px) and (max-width: 539px) {
   .container {
     width: 83%;
+  }
+  .section {
+    padding: 80px 0;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .section-subtitle {
+    font-size: 15px;
   }
   .navbar-block {
     height: 65px;
@@ -291,16 +400,45 @@ img {
     margin-top: 30px;
     font-size: 30px;
   }
+  .hero-list__items {
+    width: auto;
+  }
   .hero-image {
     width: auto;
     padding: 30px 0 80px 0;
   }
+  .offer {
+    background: none;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__title {
+    max-width: 80%;
+  }
+  .offer__subtitle {
+    max-width: 80%;
+  }
 }
 
-@media all and (min-width: 320px) and (max-width: 539px) {
+@media all and (min-width: 240px) and (max-width: 320px) {
   .container {
     max-width: 274px;
     width: 83%;
+  }
+  .section {
+    padding: 50px 0;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+  .section-subtitle {
+    font-size: 14px;
   }
   .navbar-block {
     height: 65px;
@@ -326,12 +464,21 @@ img {
     display: none;
   }
   .navbar__button {
-    font-size: 10px;
+    font-size: 14px;
     width: 137px;
     height: 39px;
     padding: 11px 0;
     text-align: center;
     border-radius: 5px;
+  }
+  .hero-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .hero-text {
     width: 100%;
@@ -364,7 +511,25 @@ img {
     line-height: 1.3;
   }
   .hero-image {
+    width: auto;
     padding: 20px 0 50px 0;
+  }
+  .offer {
+    background: none;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__title {
+    max-width: 100%;
+  }
+  .offer__subtitle {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */

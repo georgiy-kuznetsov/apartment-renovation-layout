@@ -1,21 +1,20 @@
+*, *:after, *:before
+    box-sizing: border-box
 img
     width: 100%
-
 .container
     max-width: 1170px
     width: 94%
     margin-right: auto
     margin-left: auto
-
-.section-title
-    line-height: 1.4
-    letter-spacing: .6px
-    +msc700
-
-.section-subtitle
-    +msc500
-
-
+.section
+    padding: 90px 0
+    &-title
+        font-size: 24px
+        +msc700
+    &-subtitle
+        font-size: 16px
+        +msc300
 .button
     background-color: $yell
     padding: 18px 30px
@@ -27,8 +26,15 @@ img
     &:hover
         background-color: lighten($yell, 10%)
         cursor: pointer
-
 .phone
         text-decoration: none
         color: $text_dark
         +msc700
+.input
+    border: 1px solid $border-input
+    border-radius: 10px
+    height: 65px
+    padding: 20px 0 20px 26px
+    font-size: 15px
+    &:focus
+        border: 1px solid $yell
