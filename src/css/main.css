@@ -81,6 +81,43 @@ img {
   border: 1px solid #FFD200;
 }
 
+/* Модальное окно */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto auto;
+  min-width: 350px;
+  min-height: 200px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+.modal-dialog__close {
+  background-color: rgba(255, 255, 255, 0);
+  color: #000;
+  border: none;
+  font-size: 25px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+}
+
 /* Стили верхней навигационной панели */
 .navbar {
   padding: 8px 0;

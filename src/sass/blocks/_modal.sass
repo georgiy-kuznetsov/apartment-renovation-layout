@@ -1,0 +1,26 @@
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(#000, 0.5)
+    display: none
+    &_active
+        display: flex
+    &-dialog
+        position: relative
+        margin: auto auto
+        min-width: 350px
+        min-height: 200px
+        border-radius: 10px
+        background-color: #ffffff
+        padding: 25px
+        &__close
+            background-color: rgba(#fff, 0.0)
+            color: #000
+            border: none
+            font-size: 25px
+            position: absolute
+            right: 5px
+            top: 5px
