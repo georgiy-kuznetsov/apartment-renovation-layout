@@ -19,4 +19,9 @@ $(function() {
     scrollButton.on('click', function() {
         $('html, body').animate({scrollTop:0}, 'slow');
     });
+    $(document).keyup(function(e) {
+        if (e.key === "Escape" || e.keyCode === 27) {
+            $('.modal').removeClass('modal_active');
+        };
+    });
 });
