@@ -101,8 +101,8 @@ img {
 .modal-dialog {
   position: relative;
   margin: auto auto;
-  min-width: 350px;
-  min-height: 200px;
+  width: 420px;
+  height: 652px;
   border-radius: 10px;
   background-color: #ffffff;
   padding: 25px;
@@ -125,12 +125,8 @@ img {
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(51, 51, 51, 0.3);
   border-radius: 50%;
-  color: #ffffff;
-  font-size: 20px;
-  -webkit-transform: rotate(270deg);
-          transform: rotate(270deg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
