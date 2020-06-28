@@ -40,6 +40,7 @@ img {
 .section-title {
   font-size: 24px;
   font-family: msc700, sans-serif;
+  text-align: center;
 }
 
 .section-subtitle {
@@ -341,6 +342,7 @@ img {
   max-width: 370px;
   line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -403,7 +405,48 @@ img {
   margin-left: 10px;
 }
 
-/* Стили для карусели (slider) */
+/* Стили для карусели (portfolio) */
+.portfolio {
+  padding: 90px 0;
+  background: #F5F5F5 url("../img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+  line-height: 1.45;
+}
+
+.portfolio__arrow {
+  max-width: 120px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+.slider__image {
+  max-width: 370px;
+  margin: auto;
+}
+
+.arrows__left:hover, .arrows__right:hover {
+  cursor: pointer;
+}
+
 /* Адаптив под разные размеры экрана */
 @media all and (min-width: 990px) and (max-width: 1239px) {
   .container {
@@ -645,6 +688,19 @@ img {
   .offer__phone {
     margin-left: 0;
   }
+  .portfolio {
+    padding-top: 45px;
+  }
+  .portfolio__title {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  .portfolio__arrow {
+    margin-bottom: 60px;
+  }
+  .slider {
+    margin-bottom: 45px;
+  }
 }
 
 @media all and (min-width: 240px) and (max-width: 320px) {
@@ -772,6 +828,19 @@ img {
   }
   .offer__phone {
     margin-left: 0;
+  }
+  .portfolio {
+    padding-top: 45px;
+  }
+  .portfolio__title {
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  .portfolio__arrow {
+    margin-bottom: 60px;
+  }
+  .slider {
+    margin-bottom: 45px;
   }
 }
 /*# sourceMappingURL=main.css.map */
