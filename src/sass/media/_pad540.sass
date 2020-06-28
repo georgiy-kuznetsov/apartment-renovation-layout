@@ -17,6 +17,20 @@
             align-items: center
         &__contacts
             display: none
+    @media all and (min-width : 390px) and (max-width : 430px)
+        .navbar__button
+            font-size: 14px
+            padding: 15px 10px
+            text-align: center
+            border-radius: 5px
+    @media all and (min-width : 320px) and (max-width : 390px)
+        .navbar__button
+            font-size: 14px
+            width: 137px
+            height: 39px
+            padding: 11px 0
+            text-align: center
+            border-radius: 5px
     .hero
         &-block
             display: flex
@@ -44,3 +58,14 @@
             max-width: 80%
         &__subtitle
             max-width: 80%
+        &-call
+            flex-direction: column
+        &__time
+            width: 100%
+            padding-right: 10px
+        &-condition
+            width: 100%
+            padding-left: 0
+            flex-direction: column
+        &__phone
+            margin-left: 0

@@ -3,6 +3,7 @@
     background-position: center right
     background-size: contain
     position: relative
+    color: $text_dark
     &::before
         content: ''
         width: 50%
@@ -23,6 +24,8 @@
         max-width: 250px
         display: block
         margin-bottom: 30px
+    &-form
+        margin-bottom: 27px
     &__input
         margin-bottom: 30px
         width: 240px
@@ -31,4 +34,21 @@
     &__button
         width: 100%
         min-height: 70px
-    
+    &-call
+        display: flex
+        flex-direction: row
+        +msc300
+        font-size: 15px
+    &__time
+        width: 50%
+        padding-right: 20px
+        line-height: 1.6
+    &-condition
+        width: 50%
+        display: flex
+        flex-direction: column
+        text-align: left
+        padding-left: 45px
+        line-height: 1.6
+    &__phone
+        margin-left: 10px

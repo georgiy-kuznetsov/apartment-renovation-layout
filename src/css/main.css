@@ -318,6 +318,7 @@ img {
   background-position: center right;
   background-size: contain;
   position: relative;
+  color: #333333;
 }
 
 .offer::before {
@@ -348,6 +349,10 @@ img {
   margin-bottom: 30px;
 }
 
+.offer-form {
+  margin-bottom: 27px;
+}
+
 .offer__input {
   margin-bottom: 30px;
   width: 240px;
@@ -360,6 +365,42 @@ img {
 .offer__button {
   width: 100%;
   min-height: 70px;
+}
+
+.offer-call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: msc300, sans-serif;
+  font-size: 15px;
+}
+
+.offer__time {
+  width: 50%;
+  padding-right: 20px;
+  line-height: 1.6;
+}
+
+.offer-condition {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  padding-left: 45px;
+  line-height: 1.6;
+}
+
+.offer__phone {
+  margin-left: 10px;
 }
 
 /* Стили для карусели (slider) */
@@ -389,6 +430,24 @@ img {
   .offer__input {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .offer-call {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__time {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer-condition {
+    width: 100%;
+    padding-left: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -448,6 +507,24 @@ img {
   .offer__subtitle {
     max-width: 80%;
   }
+  .offer-call {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__time {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .offer-condition {
+    width: 100%;
+    padding-left: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 @media all and (min-width: 320px) and (max-width: 539px) {
@@ -483,6 +560,29 @@ img {
   .navbar__contacts {
     display: none;
   }
+}
+
+@media all and (min-width: 320px) and (max-width: 539px) and (min-width: 390px) and (max-width: 430px) {
+  .navbar__button {
+    font-size: 14px;
+    padding: 15px 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 539px) and (min-width: 320px) and (max-width: 390px) {
+  .navbar__button {
+    font-size: 14px;
+    width: 137px;
+    height: 39px;
+    padding: 11px 0;
+    text-align: center;
+    border-radius: 5px;
+  }
+}
+
+@media all and (min-width: 320px) and (max-width: 539px) {
   .hero-block {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -523,6 +623,27 @@ img {
   }
   .offer__subtitle {
     max-width: 80%;
+  }
+  .offer-call {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__time {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .offer-condition {
+    width: 100%;
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__phone {
+    margin-left: 0;
   }
 }
 
@@ -630,6 +751,27 @@ img {
   }
   .offer__subtitle {
     max-width: 100%;
+  }
+  .offer-call {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__time {
+    width: 100%;
+    padding-right: 10px;
+  }
+  .offer-condition {
+    width: 100%;
+    padding-left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .offer__phone {
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
