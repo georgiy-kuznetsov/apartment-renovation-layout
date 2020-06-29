@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
         <meta name="discription" content="Ремон квартир под ключ. Выезд специалиста на замер помещения.">
-        <meta name="autor" content="Геогий Кузнецов">
+        <meta name="autor" content="Георгий Кузнецов">
         <link rel="icon" href="#">
         <link rel="stylesheet" href="src/css/normalize.css">
         <link rel="stylesheet" href="src/css/reset.css">
@@ -88,6 +88,7 @@
     </section><!-- /.offer -->
 
 <!-- Портфолио (слайдер) -->
+
     <section class="section portfolio">
         <div class="container">
             <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах</h2><!-- /.section-title portfolio__title -->
@@ -122,7 +123,74 @@
         </div><!-- /.container -->
     </section><!-- /.section portfolio -->
 
+<!-- Блок с услцгами (price) -->
+
+    <section class="section price">
+        <div class="container">
+            <h2 class="section-title price__title">У нас очень гибкая система скидок на комплексные работы!</h2><!-- /.section-title price__title -->
+            <span class="section-subtitle price__subtitle">Прайс на наши услуги</span><!-- /.section-subtitle price__subtitle -->
+            <div class="cards">
+                <div class="card">
+                    <div class="card__image">
+                        <img src="src/img/price/Clip-1.jpg" alt="Ванная комната">
+                    </div><!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт ванных комнат и с/у</h4><!-- /.card__title -->
+                        <a href="#" class="card__link">Узнать цены</a><!-- /.ard__link -->
+                    </div><!-- /.card__text -->
+                </div><!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img src="src/img/price/Clip-2.jpg" alt="Гостиная">
+                    </div><!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт комнат и квартир</h4><!-- /.card__title -->
+                        <a href="#" class="card__link">Узнать цены</a><!-- /.ard__link -->
+                    </div><!-- /.card__text -->
+                </div><!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img src="src/img/price/Clip-3.jpg" alt="Офис">
+                    </div><!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Отделка офисных помещений</h4><!-- /.card__title -->
+                        <a href="#" class="card__link">Узнать цены</a><!-- /.ard__link -->
+                    </div><!-- /.card__text -->
+                </div><!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img src="src/img/price/Clip-4.jpg" alt="Новостройка">
+                    </div><!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт в новостройках</h4><!-- /.card__title -->
+                        <a href="#" class="card__link">Узнать цены</a><!-- /.ard__link -->
+                    </div><!-- /.card__text -->
+                </div><!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img src="src/img/price/Clip-5.jpg" alt="Кухня">
+                    </div><!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт кухонь</h4><!-- /.card__title -->
+                        <a href="#" class="card__link">Узнать цены</a><!-- /.ard__link -->
+                    </div><!-- /.card__text -->
+                </div><!-- /.card -->
+                <div class="card">
+                    <div class="card__image">
+                        <img src="src/img/price/Clip-6.jpg" alt="Коттедж">
+                    </div><!-- /.card__image -->
+                    <div class="card__text">
+                        <h4 class="card__title">Ремонт дач и коттеджей</h4><!-- /.card__title -->
+                        <a href="#" class="card__link">Узнать цены</a><!-- /.ard__link -->
+                    </div>
+                    <!-- /.card__text -->
+                </div><!-- /.card -->
+            </div><!-- /.cards -->
+        </div><!-- /.container -->
+    </section><!-- /.section price -->
+
 <!-- Модальное окно -->
+
     <div class="modal" id="modal">
         <div class="modal-dialog">
             <button class="modal-dialog__close" id="close">&times;</button><!-- /.modal-dialog__close -->
@@ -140,12 +208,13 @@
 
 <!-- Кнопка прокрутки в верх страницы -->
 <div class="scroll-button" id="scroll-button">
-    <img src="src\img\interface\up-button.png" alt="Up button">
+    <img src="src\img\interface\up-button.png" alt="Scroll button">
 </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="src/js/modal.js"></script>
     <script src="src/js/slick.min.js"></script>
+<!-- Скрипт для слайдера -->
     <script>
         $(document).ready(function() {
             $('.slider').slick({

@@ -1,0 +1,45 @@
+.price
+    &__title
+        margin: auto
+        margin-bottom: 58px
+    &__subtitle
+        margin: auto
+        display: block
+        margin-bottom: 59px
+        text-align: center
+.cards
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+.card
+    width: 370px
+    height: 410px
+    &__image
+        margin-bottom: 35px
+    &__title 
+        +msc700
+        font-size: 18px
+        text-align: center
+        margin: 0 auto 30px auto
+        display: block
+    &__link
+        text-decoration: none
+        display: block
+        text-align: center
+        color: $text-dark
+        +msc300
+        font-size: 16px
+        &:after
+            content: ''
+            width: 110px
+            height: 3px
+            background-color: $yell
+            display: block
+            margin: auto
+            margin-top: 0
+            transition: 0.2s ease-out
+        &:hover:after
+            height: 13px
+            margin-top: -10px
+
