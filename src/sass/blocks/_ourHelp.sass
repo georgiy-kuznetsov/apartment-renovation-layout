@@ -1,10 +1,29 @@
 .our-help
     padding-top: 0
-    background-color: red
     &__title-block
-        padding-top: 90px
-        padding-bottom: 90px
-        background-color: $yell
+        padding: 90px 0
+        background-color: $yell-darken
     &__title
         +msc300
         font-size: 32px
+        max-width: 900px
+        text-align: center
+        margin: 0 auto
+        line-height: 1.4
+    &__wrap
+        padding: 100px 0 135px 0
+        display: flex
+        justify-content: space-between
+    &__card
+        height: 410px
+        width: 370px
+        position: relative
+    &__img
+        position: absolute
+        z-index: 1
+    &__text
+        position: absolute
+        z-index: 2
+        padding: 25px 15px 0 25px
+        +msc300
+        font-size: 16px
