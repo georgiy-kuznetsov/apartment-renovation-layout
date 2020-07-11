@@ -40,7 +40,7 @@
             <div class="container">
                 <div class="hero-block">
                     <div class="hero-text">
-                        <h1 class="section-title hero__title">Внутренняя отделка помещений "под ключ"</h1><!-- /.hero-text__title -->
+                        <h1 class="section-title hero__title wow pulse" data-wow-delay="0.05s">Внутренняя отделка помещений "под ключ"</h1><!-- /.hero-text__title -->
                         <span class="section-subtitle hero__subtitle">с гарантией качества, прописанной в договоре</span><!-- /.hero-text__subtitle -->
                         <ul class="hero-list">
                             <li class="hero-list__items">
@@ -70,14 +70,14 @@
     <section class="offer section">
         <div class="container">
             <div class="offer-block">
-                <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2><!-- /.section-title -->
-                <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span><!-- /.section-subtitle -->
+                <h2 class="section-title offer__title  wow fadeInLeft">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2><!-- /.section-title -->
+                <span class="section-subtitle offer__subtitle  wow fadeInLeft" data-wow-delay="0.05s">Оставьте заявку на разработку бесплатного дизайн-проекта!</span><!-- /.section-subtitle -->
                 <form action="#" class="form offer-form">
-                    <input type="text" class="input offer__input" placeholder="Ваше имя">
-                    <input type="tel" class="input offer__input" placeholder="Ваш телефон">
-                    <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+                    <input type="text" class="input offer__input  wow fadeInLeft" data-wow-delay="0.1s" placeholder="Ваше имя">
+                    <input type="tel" class="input offer__input  wow fadeInLeft" data-wow-delay="0.15s" placeholder="Ваш телефон">
+                    <button class="button offer__button  wow fadeInLeft" data-wow-delay="0.2s">Получить бесплатный дизайн-проект</button>
                 </form><!-- /.form offer__form -->
-                <div class="offer-call">
+                <div class="offer-call wow fadeInLeft" data-wow-delay="0.25s">
                     <span class="offer__time">Наш менеджер перезвонит Вам в течение 60 секунд</span><!-- /.offer__time -->
                     <div class="offer-condition">
                         <span class="offer__action">или перезвоните нам сами</span><!-- /.offer__action -->
@@ -124,7 +124,7 @@
         </div><!-- /.container -->
     </section><!-- /.section portfolio -->
 
-<!-- Блок с услцгами (price) -->
+<!-- Блок с услугами (price) -->
 
     <section class="section price">
         <div class="container">
@@ -190,6 +190,61 @@
         </div><!-- /.container -->
     </section><!-- /.section price -->
 
+<!-- Блок с преимуществами -->
+
+    <section class="section benefits">
+        <div class="container">
+            <h2 class="section-title benefits__title">Наши специалисты готовы выехать на замер в любое удобное для Вас время</h2><!-- /.section-title benefits__title -->
+            <span class="section-subtitle benefits__subtitle">5 шагов до ремонта</span><!-- /.section-subtitle benefits__subtitle -->
+            <div class="steps">
+                <div class="step">
+                        <div class="step__img-block">
+                            <img class="step__img" src="src/img/benefits/woman.svg" alt="Девушка">
+                        </div>
+                        <span class="step__text">Вы звоните нам или оставляете заявку</span>
+                </div><!-- /.step -->
+                <img class="step__arrow" src="src\img\benefits\arrow.svg" alt="Стрелка вправо">
+                <div class="step">
+                    <div class="step__img-block">
+                        <img class="step__img" src="src/img/benefits/watch.svg" alt="Часы">
+                    </div>
+                    <span class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</span>
+                </div><!-- /.step -->
+                <img class="step__arrow" src="src\img\benefits\arrow.svg" alt="Стрелка вправо">
+                <div class="step">
+                    <div class="step__img-block">
+                        <img class="step__img" src="src/img/benefits/money.svg" alt="Деньги">
+                    </div>
+                    <span class="step__text">Рассчитываем смету согласовываем с Вами</span>
+                </div><!-- /.step -->
+                <img class="step__arrow" src="src\img\benefits\arrow.svg" alt="Стрелка вправо">
+                <div class="step">
+                    <div class="step__img-block">
+                        <img class="step__img" src="src/img/benefits/document.svg" alt="Документ">
+                    </div>
+                    <span class="step__text">Подписываем договор закупаем материал по оптовым ценам</span>
+                </div><!-- /.step -->
+                <img class="step__arrow" src="src\img\benefits\arrow.svg" alt="Стрелка вправо">
+                <div class="step">
+                    <div class="step__img-block">
+                        <img class="step__img" src="src/img/benefits/calendar.svg" alt="Календарь">
+                    </div>
+                    <span class="step__text">Выполняем ремонт в указанные сроки</span>
+                </div><!-- /.step -->
+            </div><!-- /.steps -->
+        </div><!-- /.contsiner -->
+    </section><!-- /.section benefits -->
+
+<!-- Ремонт дешевле... Какую помощь окажем -->
+
+    <section class="section our-help">
+        <div class="container">
+            <div class="our-help__title-block">
+                <h2 class="our-help__title">Ремонт обойдется Вам дешевле, так как мы используем качественные материалы по оптовым ценам</h2><!-- /.our-help__title -->
+            </div><!-- /.our-helt__title-block -->
+        </div><!-- /.container -->
+    </section><!-- /.section our-help -->
+
 <!-- Модальное окно -->
 
     <div class="modal" id="modal">
@@ -216,6 +271,6 @@
     <script src="src/js/modal.js"></script>
     <script src="src/js/slick.min.js"></script>
     <script src="src/js/wow.min.js"></script>
-    <script src="src/js/animation.js"></script>
+    <script src="src/js/liba.js"></script>
     </body>
 </html>

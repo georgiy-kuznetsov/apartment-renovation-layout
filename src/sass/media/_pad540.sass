@@ -80,3 +80,20 @@
         margin-bottom: 45px
     .cards
         justify-content: center
+    .benefits
+    .step
+        margin-bottom: 30px
+        &s
+            justify-content: space-between
+            flex-wrap: wrap
+        &__arrow
+            display: none
+        &:last-child
+            margin: 0 auto
+    @media all and (min-width : 320px) and (max-width : 420px)
+        .step
+            margin: 0 auto 30px auto
+            &:last-child
+                margin-bottom: 0
+            &s
+                flex-direction: column
