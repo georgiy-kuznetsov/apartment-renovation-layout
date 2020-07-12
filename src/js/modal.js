@@ -24,4 +24,7 @@ $(function() {
             $('.modal').removeClass('modal_active');
         };
     });
+
+    var closeBtn = $('.close-btn');
+    
 });
