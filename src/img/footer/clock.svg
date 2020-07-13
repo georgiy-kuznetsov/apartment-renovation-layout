@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="clock-with-white-face" transform="translate(-2196 -7718)">
+    <g id="clock-with-white-face-2" data-name="clock-with-white-face" transform="translate(2196 7718)">
+      <path id="Forma_1" data-name="Forma 1" d="M0,10A10,10,0,1,1,10,20,10.029,10.029,0,0,1,0,10Zm2,0a8,8,0,1,0,8-8A8.024,8.024,0,0,0,2,10Zm7,1V5h1.5v5.2L15,12.9l-.8,1.3Z"/>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M2196,7728a10,10,0,1,1,10,10A10.029,10.029,0,0,1,2196,7728Zm2,0a8,8,0,1,0,8-8A8.024,8.024,0,0,0,2198,7728Zm7,1v-6h1.5v5.2l4.5,2.7-.8,1.3Z" fill="#ffc000"/>
+  </g>
+</svg>

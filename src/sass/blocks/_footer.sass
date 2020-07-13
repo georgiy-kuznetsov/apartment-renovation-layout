@@ -1,0 +1,38 @@
+.half-container
+    max-width: 585px
+    margin-right: auto
+.footer-container
+    display: flex
+    color: $text-dark
+.map
+    flex-basis: 50%
+.contacts
+    flex-basis: 50%
+    padding: 90px 0 125px 215px
+    box-sizing: border-box
+    height: 100%
+    &__title
+        +msc700
+        font-size: 22px
+        margin-bottom: 130px
+    &__list
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+    &__items
+        display: flex
+        margin-bottom: 60px
+        align-items: flex-start
+        &:last-child
+            margin-bottom: 0
+    &__info
+        +msc300
+        font-size: 16px
+        line-height: 26px
+        display: block
+        margin-left: 25px
+        padding: 0
+        margin-top: -5px
+    &__icon
+        height: 20px
+        max-width: 20px
