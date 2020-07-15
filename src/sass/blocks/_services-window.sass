@@ -1,0 +1,64 @@
+.services
+    position: fixed
+    top: 0
+    left: 0
+    height: 100%
+    width: 100%
+    background-color: rgba(#000, 0.5)
+    display: flex
+    &_active
+        display: flex
+    &__contain
+        position: relative
+        margin: auto auto
+        max-width: 1170px
+        height: 675px
+        background-color: #ffffff
+        display: flex
+        color: $text-dark
+        //overflow: scroll
+    &__parametrs-block, &-form__block
+        flex-basis: 50%
+        padding: 75px
+    &-form
+        flex-basis: 50%
+.parametr
+    display: flex
+    align-items: center
+    margin-bottom: 15px
+    &:last-child
+        margin-bottom: 0
+    &s
+        margin-bottom: 50px
+    &__img
+        height: 85px
+        width: 120px
+        display: block
+        margin-right: 30px
+    &__text
+        +msc500
+        font-size: 16px
+        display: block
+        &::after
+            content: ''
+            display: block
+            height: 2px
+            width: 42px
+            background-color: $yell
+            margin: 10px 0
+    &__price
+        +msc300
+        font-size: 16px
+        line-height: 22px
+.points
+    &__title
+        +msc700
+        font-size: 14px
+        margin-bottom: 25px
+    &__list
+        list-style: disc
+    &__items
+        +msc300
+        font-size: 14px
+        &:marker
+            color: green

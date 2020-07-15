@@ -313,12 +313,12 @@
                     </ul><!-- /.interview-list -->
                     <!-- /.interview__list -->
                 </div><!-- /.interviw brif__interview -->
-                <form action="#" class="form brif__form">
+                <form action="#" class="form brif__form" id="brif-form" name="brif">
                     <h3 class="form__title wow fadeInRight">Оставьте завку на бесплатный расчет ремонта по телефону</h3>
                     <span class="form__subtitle wow fadeInRight">Для этого заполните форму ниже</span>
-                    <input type="text" class="input brif__input wow fadeInRight" data-wow-delay="0.05s" placeholder="Ваш телефон" required>
-                    <input type="text" class="input brif__input wow fadeInRight" data-wow-delay="0.1s" placeholder="Ваше имя" required>
-                    <button class="button brif__button wow fadeInRight" data-wow-delay="0.15s">Узнать стоимость</button>
+                    <input type="text" class="input brif__input wow fadeInRight" data-wow-delay="0.05s" placeholder="Ваш телефон" name="username" pattern="+7\([0-9]{3}\)[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+                    <input type="text" class="input brif__input wow fadeInRight" data-wow-delay="0.1s" placeholder="Ваше имя" name="userphone" required>
+                    <button type="submit" class="button brif__button wow fadeInRight" data-wow-delay="0.15s">Узнать стоимость</button>
                     <span class="form__discription wow fadeInRight" data-wow-delay="0.2s">Мы презвоним Вам в течение 60 секунд</span>
                 </form><!-- /.brif__form -->
             </div><!-- /.brif-block -->
@@ -352,6 +352,54 @@
         </div><!-- /.footer-container -->
     </footer><!-- /.footer section-map -->
 
+    <div class="services services__wrap">
+        <div class="services__contain">
+            <div class="services__parametrs-block">
+                <div class="parametrs">
+                    <div class="parametr">
+                        <img class="parametr__img" src="src/img/services-window/bathroom.jpg" alt="Ванная комната">
+                        <div class="parametr__info">
+                            <span class="parametr__text">Ванная комната</span>
+                            <span class="parametr__price">135*150 - 31 000 руб.<br>170*170 - 43 000 руб.</span>
+                        </div><!-- /.parametr__info -->
+                    </div><!-- /.parametr -->
+                    <div class="parametr">
+                        <img class="parametr__img" src="src/img/services-window/toilet.jpg" alt="Туалет">
+                        <div class="parametr__info">
+                            <span class="parametr__text">Туалет</span>
+                            <span class="parametr__price">135*70 - 14 000 руб.</span>
+                        </div><!-- /.parametr__info -->
+                    </div><!-- /.parametr -->
+                    <div class="parametr">
+                        <img class="parametr__img" src="src/img/services-window/combinate-toilet.jpg" alt="Совмещенный санузел">
+                        <div class="parametr__info">
+                            <span class="parametr__text">Совмещенный санузел</span>
+                            <span class="parametr__price">170*240 - 54 000 руб.</span>
+                        </div><!-- /.parametr__info -->
+                    </div><!-- /.parametr -->
+                </div><!-- /.parametrs -->
+                <div class="points points__block">
+                    <h4 class="points__title">В стоимость работ входит</h4>
+                    <ul class="points__list">
+                        <li class="points__items">Первый пункт</li>
+                    </ul><!-- /.points__list -->
+                </div><!-- /.services__points -->
+            </div><!-- /.servicer__parametrs-block -->
+            <div class="services-form services-form__block">
+                    <h4 class="services-form__title">Узнайте точную стоимость ремонта по телефону!</h4><!-- /.modal-dialog__title -->
+                    <span class="services-form__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
+                    <form action="#" class="form services-form__form">
+                        <input type="text" class="input services-form__input" placeholder="Ваше имя">
+                        <input type="tel" class="input services-form__input" placeholder="Ваш телефон">
+                        <button class="button services-form__button">Заказать звонок</button>
+                    </form><!-- /.form modal__form -->
+                    <span class="services-form__info">или Вы можете позвонить нам сами по телефону:</span>
+                    <a class="phone services-form__phone" href="tel:+7(495)42-251-31" >+7 (495) 42-251-31</a>
+            </div><!-- /.form form-block -->
+        </div><!-- /.services__contain -->
+
+    </div><!-- /.services services__wrap -->
+
 <!-- Модальное окно -->
 
     <div class="modal" id="modal">
@@ -379,6 +427,6 @@
     <script src="src/js/main.js"></script>
     <script src="src/js/slick.min.js"></script>
     <script src="src/js/wow.min.js"></script>
-    <script src="src/js/liba.js"></script>
+    <script src="src/js/jquery.validate.min.js"></script>
     </body>
 </html>
