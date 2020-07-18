@@ -37,5 +37,12 @@ $(function() {
                 },
             ]
         });
+        $('.services-slider').slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            prevArrow: $('.services-slider__arrow_left'),
+            nextArrow: $('.services-slider__arrow_right'),
+        });
     });
 });
