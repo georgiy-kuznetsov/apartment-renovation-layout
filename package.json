@@ -1,0 +1,30 @@
+{
+  "name": "repair",
+  "version": "1.0.0",
+  "description": "Верстка макета \"Ремонт квартир\" (gulp)",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/quick-progress/repair.git"
+  },
+  "keywords": [
+    "Ремонт",
+    "квартир",
+    "верстка",
+    "макета",
+    "psd"
+  ],
+  "author": "quick-progress",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/quick-progress/repair/issues"
+  },
+  "homepage": "https://github.com/quick-progress/repair#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.10",
+    "gulp": "^4.0.2"
+  }
+}
