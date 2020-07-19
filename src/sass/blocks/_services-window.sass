@@ -125,17 +125,21 @@
             margin-right: 13px
             font-size: 22px
 .services-slider
-        max-width: 440px
+    max-width: 440px
+    min-height: 288px
     &-wrap
         display: flex
         margin: 0 auto
+        flex-direction: column
         display: none
+    &__items
+        overflow: hidden
     &__image
         max-width: 440px
     &__arrow-wrap
         display: flex
         justify-content: space-between
-        margin-top: -144px
+        //margin-top: -144px
     &__arrow-img
         width: 9px
         height: 15px
@@ -151,4 +155,12 @@
     &__arrow
         &_left
             transform: rotate(180deg)
+    &__title
+        +msc300
+        font-size: 20px
+        line-height: 24px
+        display: block
+        margin-top: 45px
+        max-width: 440px
+        text-align: justify
 

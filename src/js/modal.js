@@ -1,13 +1,28 @@
 $(function() {
+
+    //Кнопка "Перезвоните мне"
     var button = $('#button');
     var modal = $('#modal');
-    var close = $('#close');
+    var close = $('.modal-dialog__close');
     button.on('click', function() {
         modal.addClass('modal_active');
+        $('.modal-dialog').animate({marginTop:'3%', opacity:'1'}, 300);
+        $('body').css('overflow', 'hidden');
     });
-    close.on('click', function() {
-        modal.removeClass('modal_active');
+    $(document).keyup(function(e) {
+        if (e.key === "Escape" || e.keyCode === 27) {
+            closeWindow();
+            closeModal();
+        };
     });
+    close.on('click', () => { closeModal();});
+    const closeModal = () => {
+        $('.modal-dialog').animate({marginTop:'100%', opacity:'0'}, 300);
+        setTimeout(() => {
+            modal.removeClass('modal_active');
+        }, 300);
+        $('body').css('overflow', 'auto');
+    };
 
     //Кнопка прокрутки наверх
     $(window).on("scroll", function() {
@@ -21,7 +36,7 @@ $(function() {
     });
 
 
-    let closeBtn = $('.close-btn'),
+    let closeBtn = $('.services__close'),
         typeService,
         card = $('.card');
 
@@ -45,12 +60,9 @@ $(function() {
                 $('.points__block').css("display", "block");
                 break;
             case 'room-and-flat':
-                let firstImg = $('#first-img');
-                firstImg.attr("src", "src/img/services-window/badroom-1.jpg").attr("alt", "Спальня");
-                let secondImg = $('#second-img');
-                secondImg.attr("src", "src/img/services-window/badroom-2.jpg").attr("alt", "Туалет");
-                let thirdImg = $('#third-img');
-                thirdImg.attr("src", "src/img/services-window/badroom-3.jpg").attr("alt", "Совмещенный санузел");
+                $('#first-img').attr("src", "src/img/services-window/badroom-1.jpg").attr("alt", "Спальня");
+                $('#second-img').attr("src", "src/img/services-window/badroom-2.jpg").attr("alt", "Туалет");
+                $('#third-img').attr("src", "src/img/services-window/badroom-3.jpg").attr("alt", "Совмещенный санузел");
                 for (i = 6; i <= 15; i++) {
                     $('.points__list').append($('<li>', {
                         'class': 'points__items',
@@ -61,6 +73,7 @@ $(function() {
                 $('.points__block').css("display", "block");
                 break;
             case 'office':
+
             case 'new-build':
             case 'kitchen':
             case 'cottage':
@@ -71,12 +84,6 @@ $(function() {
     closeBtn.on('click', function() {
         closeWindow();
     });
-    $(document).keyup(function(e) {
-        if (e.key === "Escape" || e.keyCode === 27) {
-            closeWindow();
-        };
-    });
-
     function closeWindow() {
         $('.services__contain').animate({marginTop:'100%', opacity:'1'}, 300)
         setTimeout(() => {
@@ -91,4 +98,14 @@ $(function() {
             $('body').css('overflow','scroll');
         }, 300);
     };
+});
+
+$('.services-slider').css('display', 'flex');
+$('.services-slider__items:nth-child(2), .services-slider__items:nth-child(3)').css('width', '0px');
+let counterSlide = 1;
+$('.services-slider__arrow_right').on('click', function () {
+    $(`.services-slider__items:nth-child(${counterSlide})`).animate({width:'0'}, 300);
+    counterSlide++;
+    if (counterSlide > 3) counterSlide = 1;
+    $(`.services-slider__items:nth-child(${counterSlide})`).animate({width:'100%'}, 300);
 });
