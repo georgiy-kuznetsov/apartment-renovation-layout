@@ -7,20 +7,22 @@
         <meta name="discription" content="Ремон квартир под ключ. Выезд специалиста на замер помещения.">
         <meta name="autor" content="Георгий Кузнецов">
         <link rel="icon" href="#">
-        <link rel="stylesheet" href="src/css/normalize.css">
-        <link rel="stylesheet" href="src/css/reset.css">
-        <link rel="stylesheet" href="src/css/main.css">
-        <link rel="stylesheet" href="src/css/slick.css">
-        <link rel="stylesheet" href="src/css/animate.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/animate.min.css">
         <title>Ремонт квартир</title>
     </head>
     <body>
+@@include('_header.html')
+
 <!-- Шапка -->
         <nav class="navbar">
             <div class="container">
                 <div class="navbar-block">
                     <div class="navbar__logo">
-                        <a href="index.html"><img src="src\img\hero\logo.svg" alt="Ремонт квартир"></a>
+                        <a href="index.html"><img src="img\hero\logo.svg" alt="Ремонт квартир"></a>
                     </div><!-- /.navbar__logo -->
                     <div class="navbar__info">
                         <div class="navbar__contacts">
@@ -44,21 +46,21 @@
                         <span class="section-subtitle hero__subtitle">с гарантией качества, прописанной в договоре</span><!-- /.hero-text__subtitle -->
                         <ul class="hero-list">
                             <li class="hero-list__items">
-                                <img src="src\img\hero\watch.svg" alt="Часы" class="hero-list__img">
+                                <img src="img\hero\watch.svg" alt="Часы" class="hero-list__img">
                                 <span class="hero-list__text">Точно соблюдаем сроки</span>
                             </li>
                             <li class="hero-list__items">
-                                <img src="src\img\hero\calc.svg" alt="Калькулятор" class="hero-list__img">
+                                <img src="img\hero\calc.svg" alt="Калькулятор" class="hero-list__img">
                                 <span class="hero-list__text">Рассчитываем смету на работы и материалы в день обращения</span>
                             </li>
                             <li class="hero-list__items">
-                                <img src="src\img\hero\palette.svg" alt="Палитра" class="hero-list__img">
+                                <img src="img\hero\palette.svg" alt="Палитра" class="hero-list__img">
                                 <span class="hero-list__text">Предложим более 100 вариантов испольнения дизайна Вашего жилья</span>
                             </li>
                         </ul><!-- /.hero-text__list -->
                     </div><!-- /.hero-text -->
                     <div class="hero-image">
-                        <img src="src\img\hero\main.jpg" alt="Вид спальни сверху">
+                        <img src="img\hero\main.jpg" alt="Вид спальни сверху">
                     </div><!-- /.hero-image -->
                 </div><!-- /.hero-block -->
             </div><!-- /.container -->
@@ -94,30 +96,30 @@
                 <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах</h2><!-- /.section-title portfolio__title -->
                 <div class="slider">
                     <div class="slider__items">
-                        <img class="slider__image" src="src/img/portfolio/slider-1.jpg" alt="Интерьер квартиры">
+                        <img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Интерьер квартиры">
                     </div><!-- /.slider__items -->
                     <div class="slider__items">
-                        <img class="slider__image" src="src/img/portfolio/slider-2.jpg" alt="Интерьер квартиры">
+                        <img class="slider__image" src="img/portfolio/slider-2.jpg" alt="Интерьер квартиры">
                     </div><!-- /.slider__items -->
                     <div class="slider__items">
-                        <img class="slider__image" src="src/img/portfolio/slider-3.jpg" alt="Интерьер квартиры">
+                        <img class="slider__image" src="img/portfolio/slider-3.jpg" alt="Интерьер квартиры">
                     </div><!-- /.slider__items -->
                     <div class="slider__items">
-                        <img class="slider__image" src="src/img/portfolio/slider-1.jpg" alt="Интерьер квартиры">
+                        <img class="slider__image" src="img/portfolio/slider-1.jpg" alt="Интерьер квартиры">
                     </div><!-- /.slider__items -->
                     <div class="slider__items">
-                        <img class="slider__image" src="src/img/portfolio/slider-2.jpg" alt="Интерьер квартиры">
+                        <img class="slider__image" src="img/portfolio/slider-2.jpg" alt="Интерьер квартиры">
                     </div><!-- /.slider__items -->
                     <div class="slider__items">
-                        <img class="slider__image" src="src/img/portfolio/slider-3.jpg" alt="Интерьер квартиры">
+                        <img class="slider__image" src="img/portfolio/slider-3.jpg" alt="Интерьер квартиры">
                     </div><!-- /.slider__items -->
                 </div><!-- /.slider -->
                 <div class="arrows portfolio__arrow">
                     <div class="arrows__left">
-                        <img src="src/img/portfolio/left-arrow.png" alt="Стрека влево">
+                        <img src="img/portfolio/left-arrow.png" alt="Стрека влево">
                     </div><!-- /.left-arrow -->
                     <div class="arrows__right">
-                        <img src="src/img/portfolio/right-arrow.png" alt="Стрелка вправо">
+                        <img src="img/portfolio/right-arrow.png" alt="Стрелка вправо">
                     </div><!-- /.right-arrow -->
                 </div><!-- /.arrows -->
             </div><!-- /.container -->
@@ -132,7 +134,7 @@
                 <div class="cards">
                     <div class="card price__card wow fadeInUp" data-service="bathroom">
                         <div class="card__image">
-                            <img src="src/img/price/Clip-1.jpg" alt="Ванная комната">
+                            <img src="img/price/Clip-1.jpg" alt="Ванная комната">
                         </div><!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт ванных комнат и с/у</h4><!-- /.card__title -->
@@ -141,7 +143,7 @@
                     </div><!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-service="room-and-flat" data-wow-delay="0.1s">
                         <div class="card__image">
-                            <img src="src/img/price/Clip-2.jpg" alt="Гостиная">
+                            <img src="img/price/Clip-2.jpg" alt="Гостиная">
                         </div><!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт комнат и квартир</h4><!-- /.card__title -->
@@ -150,7 +152,7 @@
                     </div><!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-service="office" data-wow-delay="0.2s">
                         <div class="card__image">
-                            <img src="src/img/price/Clip-3.jpg" alt="Офис">
+                            <img src="img/price/Clip-3.jpg" alt="Офис">
                         </div><!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Отделка офисных помещений</h4><!-- /.card__title -->
@@ -159,7 +161,7 @@
                     </div><!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-service="new-build">
                         <div class="card__image">
-                            <img src="src/img/price/Clip-4.jpg" alt="Новостройка">
+                            <img src="img/price/Clip-4.jpg" alt="Новостройка">
                         </div><!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт в новостройках</h4><!-- /.card__title -->
@@ -168,7 +170,7 @@
                     </div><!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-service="kitchen" data-wow-delay="0.1s">
                         <div class="card__image">
-                            <img src="src/img/price/Clip-5.jpg" alt="Кухня">
+                            <img src="img/price/Clip-5.jpg" alt="Кухня">
                         </div><!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт кухонь</h4><!-- /.card__title -->
@@ -177,7 +179,7 @@
                     </div><!-- /.card -->
                     <div class="card price__card wow fadeInUp" data-service="cottage" data-wow-delay="0.2s">
                         <div class="card__image">
-                            <img src="src/img/price/Clip-6.jpg" alt="Коттедж">
+                            <img src="img/price/Clip-6.jpg" alt="Коттедж">
                         </div><!-- /.card__image -->
                         <div class="card__text">
                             <h4 class="card__title">Ремонт дач и коттеджей</h4><!-- /.card__title -->
@@ -198,35 +200,35 @@
                 <div class="steps">
                     <div class="step">
                             <div class="step__img-block">
-                                <img class="step__img" src="src/img/benefits/woman.svg" alt="Девушка">
+                                <img class="step__img" src="img/benefits/woman.svg" alt="Девушка">
                             </div>
                             <span class="step__text">Вы звоните нам или оставляете заявку</span>
                     </div><!-- /.step -->
-                    <img class="step__arrow" src="src\img\benefits\arrow.svg" alt="Стрелка вправо">
+                    <img class="step__arrow" src="img\benefits\arrow.svg" alt="Стрелка вправо">
                     <div class="step">
                         <div class="step__img-block">
-                            <img class="step__img" src="src/img/benefits/watch.svg" alt="Часы">
+                            <img class="step__img" src="img/benefits/watch.svg" alt="Часы">
                         </div>
                         <span class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</span>
                     </div><!-- /.step -->
-                    <img class="step__arrow" src="src\img\benefits\arrow.svg" alt="Стрелка вправо">
+                    <img class="step__arrow" src="img\benefits\arrow.svg" alt="Стрелка вправо">
                     <div class="step">
                         <div class="step__img-block">
-                            <img class="step__img" src="src/img/benefits/money.svg" alt="Деньги">
+                            <img class="step__img" src="img/benefits/money.svg" alt="Деньги">
                         </div>
                         <span class="step__text">Рассчитываем смету согласовываем с Вами</span>
                     </div><!-- /.step -->
-                    <img class="step__arrow" src="src\img\benefits\arrow.svg" alt="Стрелка вправо">
+                    <img class="step__arrow" src="img\benefits\arrow.svg" alt="Стрелка вправо">
                     <div class="step">
                         <div class="step__img-block">
-                            <img class="step__img" src="src/img/benefits/document.svg" alt="Документ">
+                            <img class="step__img" src="img/benefits/document.svg" alt="Документ">
                         </div>
                         <span class="step__text">Подписываем договор закупаем материал по оптовым ценам</span>
                     </div><!-- /.step -->
-                    <img class="step__arrow" src="src\img\benefits\arrow.svg" alt="Стрелка вправо">
+                    <img class="step__arrow" src="img\benefits\arrow.svg" alt="Стрелка вправо">
                     <div class="step">
                         <div class="step__img-block">
-                            <img class="step__img" src="src/img/benefits/calendar.svg" alt="Календарь">
+                            <img class="step__img" src="img/benefits/calendar.svg" alt="Календарь">
                         </div>
                         <span class="step__text">Выполняем ремонт в указанные сроки</span>
                     </div><!-- /.step -->
@@ -246,15 +248,15 @@
                 <div class="container">
                     <div class="our-help__wrap">
                         <div class="our-help__card wow fadeInUp">
-                            <img class="our-help__img" src="src/img/ourHelp/block-1.png" alt="Мужчина в стоительном магазине">
+                            <img class="our-help__img" src="img/ourHelp/block-1.png" alt="Мужчина в стоительном магазине">
                             <span class="our-help__text">Поможем закупить все материалы по оптовым ценам у проверенных поставщиков</span><!-- /.our-help__text -->
                         </div><!-- /.our-help__card -->
                         <div class="our-help__card wow fadeInUp" data-wow-delay="0.1s">
-                            <img src="src/img/ourHelp/block-2.png" alt="Мужчина с инструментом" class="our-help__img">
+                            <img src="img/ourHelp/block-2.png" alt="Мужчина с инструментом" class="our-help__img">
                             <span class="our-help__text">Мы дадим Вам максимальные скидки у наших партнеров для закупки материалов оптом </span><!-- /.our-help__text -->
                         </div><!-- /.our-help__card -->
                         <div class="our-help__card wow fadeInUp" data-wow-delay="0.2s">
-                            <img src="src/img/ourHelp/block-3.png" alt="Мужчина выбирает доски" class="our-help__img">
+                            <img src="img/ourHelp/block-3.png" alt="Мужчина выбирает доски" class="our-help__img">
                             <span class="our-help__text">Все, что не сможете найти в городе - поможем заказать у проверенных поставщиков</span><!-- /.our-help__text -->
                         </div><!-- /.our-help__card -->
                     </div><!-- /.our-help__wrap -->
@@ -269,15 +271,15 @@
                 <h2 class="section-title guarantee__title">Все наши гарантийные обязательства подробно и прозрачно описаны в договоре</h2><!-- /.section-title guarantee__title -->
                 <div class="documentation documentation__block">
                     <div class="documentation__document">
-                        <a href="src\img\guarantee\contract-1_2x.jpg" target="_blank"><img src="src/img/guarantee/contract-1.jpg" alt="Договор" class="documentation__img" target="_blank"></a>
+                        <a href="img\guarantee\contract-1_2x.jpg" target="_blank"><img src="img/guarantee/contract-1.jpg" alt="Договор" class="documentation__img" target="_blank"></a>
                         <span class="documentation__text">Гарантия на качество выполняемых работ</span><!-- /.documentation__text -->
                     </div><!-- /.documentation__document -->
                     <div class="documentation__document">
-                        <a href="src\img\guarantee\contract-1_2x.jpg" target="_blank"><img src="src/img/guarantee/contract-2.jpg" alt="Договор" class="documentation__img"></a>
+                        <a href="img\guarantee\contract-1_2x.jpg" target="_blank"><img src="img/guarantee/contract-2.jpg" alt="Договор" class="documentation__img"></a>
                         <span class="documentation__text">Гарантия на фиксированные цены. Виды работ и цены на них прописаны в договор</span><!-- /.documentation__text -->
                     </div><!-- /.documentation__document -->
                     <div class="documentation__document">
-                        <a href="src\img\guarantee\contract-1_2x.jpg" target="_blank"><img src="src/img/guarantee/contract-3.jpg" alt="Договор" class="documentation__img"></a>
+                        <a href="img\guarantee\contract-1_2x.jpg" target="_blank"><img src="img/guarantee/contract-3.jpg" alt="Договор" class="documentation__img"></a>
                         <span class="documentation__text">Гарантия на точное соблюдение сроков и ответственность за их невыполнение</span><!-- /.documentation__text -->
                     </div><!-- /.documentation__document -->
                 </div><!-- /.documentation -->
@@ -335,15 +337,15 @@
                     <h3 class="contacts__title">Приезжайте к нам в гости! <br>Проконсультируем Вас по всем вопросам ремонта</h3>
                     <ul class="contacts__list">
                         <li class="contacts__items">
-                            <img src="src/img/footer/geoposition.svg" alt="Иконка геопозиции" class="contacts__icon">
+                            <img src="img/footer/geoposition.svg" alt="Иконка геопозиции" class="contacts__icon">
                             <span class="contacts__info">г. Москва<br>ул. Ленинга, д. 10, корпус 2, оф. 308</span>
                         </li><!-- /.contacts__items -->
                         <li class="contacts__items">
-                            <img src="src/img/footer/clock.svg" alt="Часы" class="contacts__icon">
+                            <img src="img/footer/clock.svg" alt="Часы" class="contacts__icon">
                             <span class="contacts__info">Режим работы:<br>с 9:00 до 18:00</span>
                         </li><!-- /.contacts__items -->
                         <li class="contacts__items">
-                            <img src="src/img/footer/phone.svg" alt="Телефон" class="contacts__icon">
+                            <img src="img/footer/phone.svg" alt="Телефон" class="contacts__icon">
                             <span class="contacts__info">Телефон:<br>+ 7 (495) 42-251-31</span>
                         </li><!-- /.contacts__items -->
                     </ul><!-- /.contacts__list -->
@@ -358,21 +360,21 @@
             <div class="services__parametrs-block">
                 <div class="parametrs">
                     <div class="parametr">
-                        <img class="parametr__img" id="first-img" src="src/img/services-window/bathroom.jpg" alt="Ванная комната">
+                        <img class="parametr__img" id="first-img" src="img/services-window/bathroom.jpg" alt="Ванная комната">
                         <div class="parametr__info">
                             <span class="parametr__text">Ванная комната</span>
                             <span class="parametr__price">135*150 - 31 000 руб.<br>170*170 - 43 000 руб.</span>
                         </div><!-- /.parametr__info -->
                     </div><!-- /.parametr -->
                     <div class="parametr">
-                        <img class="parametr__img" id="second-img" src="src/img/services-window/toilet.jpg" alt="Туалет">
+                        <img class="parametr__img" id="second-img" src="img/services-window/toilet.jpg" alt="Туалет">
                         <div class="parametr__info">
                             <span class="parametr__text">Туалет</span>
                             <span class="parametr__price">135*70 - 14 000 руб.</span>
                         </div><!-- /.parametr__info -->
                     </div><!-- /.parametr -->
                     <div class="parametr">
-                        <img class="parametr__img" id="first-img" src="src/img/services-window/combinate-toilet.jpg" alt="Совмещенный санузел">
+                        <img class="parametr__img" id="first-img" src="img/services-window/combinate-toilet.jpg" alt="Совмещенный санузел">
                         <div class="parametr__info">
                             <span class="parametr__text">Совмещенный санузел</span>
                             <span class="parametr__price">170*240 - 54 000 руб.</span>
@@ -388,21 +390,21 @@
                 <div class="services-slider-wrap">
                     <div class="services-slider">
                         <div class="services-slider__items">
-                            <img class="services-slider__image" src="src\img\services-window\service-window-slider-1.jpg" alt="Интерьер квартиры">
+                            <img class="services-slider__image" src="img\services-window\service-window-slider-1.jpg" alt="Интерьер квартиры">
                         </div><!-- /.slider__items -->
                         <div class="services-slider__items">
-                            <img class="services-slider__image" src="src/img/services-window/service-window-slider-2.jpg" alt="Интерьер квартиры">
+                            <img class="services-slider__image" src="img/services-window/service-window-slider-2.jpg" alt="Интерьер квартиры">
                         </div><!-- /.slider__items -->
                         <div class="services-slider__items">
-                            <img class="services-slider__image" src="src/img/services-window/service-window-slider-3.jpg" alt="Интерьер квартиры">
+                            <img class="services-slider__image" src="img/services-window/service-window-slider-3.jpg" alt="Интерьер квартиры">
                         </div><!-- /.slider__items -->
                     </div><!-- /.services-slider -->
                     <div class="services-slider__arrow-wrap">
                         <div class="services-slider__arrow-box services-slider__arrow_left">
-                            <img src="src/img/services-window/arrow.svg" alt="Стрелка переключения слайдера влево" class="services-slider__arrow-img">
+                            <img src="img/services-window/arrow.svg" alt="Стрелка переключения слайдера влево" class="services-slider__arrow-img">
                         </div>
                         <div class="services-slider__arrow-box services-slider__arrow_right">
-                            <img src="src/img/services-window/arrow.svg" alt="Стрелка переключения слайдера вправо" class="services-slider__arrow-img">
+                            <img src="img/services-window/arrow.svg" alt="Стрелка переключения слайдера вправо" class="services-slider__arrow-img">
                         </div>
                     </div><!-- /.services-slider__arrow-wrap -->
                     <span class="services-slider__title">Цена отделки офисного помещения зависит от площади, использованных материалов и видов проделанных работ.</span>
@@ -438,18 +440,17 @@
             <a class="phone modal__phone" href="tel:+7(495)42-251-31" >+7 (495) 42-251-31</a>
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
-
 <!-- Кнопка прокрутки в верх страницы -->
 <div class="scroll-button" id="scroll-button">
-    <img src="src\img\interface\up-button.png" alt="Scroll button">
+    <img src="img\interface\up-button.png" alt="Scroll button">
 </div>
 <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(65715739, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/65715739" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="src/js/modal.js"></script>
-    <script src="src/js/main.js"></script>
-    <script src="src/js/slick.min.js"></script>
-    <script src="src/js/wow.min.js"></script>
-    <script src="src/js/jquery.validate.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     </body>
 </html>

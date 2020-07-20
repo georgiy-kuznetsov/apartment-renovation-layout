@@ -1,3 +1,4 @@
+@@include('modal.js');
 $(function() {
     var mapboxHeight = $('.contacts').outerHeight();
     var mapboxWidth = $('.contacts').outerWidth();
