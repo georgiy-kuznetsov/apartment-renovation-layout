@@ -11,14 +11,14 @@ let path = {
     },
     src: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-        css: source_folder + "/sass/main.sass",
+        css: source_folder + "/css/*.css",
         js: source_folder + "/js/script.js",
-        img: source_folder + "/img/**/*.{jpg, png, ico, webp, gif, svg}",
+        img: source_folder + "/img/**/*.*",
         fonts: source_folder + "/fonts/*.ttf",
     },
     watch: {
         html: source_folder + "/**/*.html",
-        css: source_folder + "/sass/**/*.sass",
+        css: source_folder + "/css/**/*.css",
         js: source_folder + "/js/**/*.js",
         img: source_folder + "/img/**/*.{jpg, png, ico, webp, gif, svg}"
     },
@@ -54,6 +54,11 @@ function html() {
         .pipe( browsersync.stream() )
 };
 
+function fonts() {
+    return src(path.src.fonts)
+        .pipe( dest(path.build.fonts) )
+};
+
 function js() {
     return src(path.src.js)
         .pipe( fileinclude() )
@@ -81,7 +86,7 @@ const clean = (param) => {
 
 function css() {
     return src(path.src.css)
-        .pipe(
+        /*.pipe(
             sass({
                 outputStyle: "extended"
             })
@@ -96,27 +101,38 @@ function css() {
             gulprename({
                 extname: ".min.css"
             })
-        )
+        )*/
         .pipe( dest(path.build.css) )
-        .pipe( browsersync.stream() )
+        //.pipe( browsersync.stream() )
 };
 
 function images() {
     return src(path.src.img)
-        .pipe (
+        .pipe(imagemin([
+            imagemin.gifsicle({interlaced: true}),
+            imagemin.mozjpeg({quality: 75, progressive: true}),
+            imagemin.optipng({optimizationLevel: 5}),
+            imagemin.svgo({
+                plugins: [
+                    {removeViewBox: true},
+                    {cleanupIDs: false}
+                ]
+            })
+        ]))
+        /*.pipe (
             imagemin({
                 progressive: true,
-                svgoPlugins: [{removeViewBox: false}],
+                svgoPlugins: [{removeViewBox: true}],
                 interlaced: true,
                 optimizationLevel: 3
             })
-        )
+        )*/
         .pipe( dest(path.build.img) )
         .pipe( browsersync.stream() )
 };
 
 
-let build = gulp.series(clean, gulp.parallel(js, css, html, images));
+let build = gulp.series(clean, gulp.parallel(js, css, html, images, fonts));
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.images = images;

@@ -1,3 +1,7 @@
+@@include('jquery.validate.min.js')
+@@include('modal.js')
+@@include('slick.min.js')
+@@include('wow.min.js')
 $(function() {
     var mapboxHeight = $('.contacts').outerHeight();
     var mapboxWidth = $('.contacts').outerWidth();
